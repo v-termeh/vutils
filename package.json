@@ -3,7 +3,7 @@
     "sideEffects": false,
     "type": "module",
     "license": "ISC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "@v-termeh/vutils",
     "description": "Utility for vue 3.",
     "main": "./dist/vutils.umd.js",
@@ -12,6 +12,13 @@
     "files": [
         "dist"
     ],
+    "exports": {
+        ".": {
+            "import": "./dist/vutils.umd.js",
+            "require": "./dist/vutils.es.js",
+            "types": "./dist/vutils.d.ts"
+        }
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/v-termeh/vutils.git"
